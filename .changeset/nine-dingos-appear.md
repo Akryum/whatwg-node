@@ -20,16 +20,10 @@ const app = fastify({ logger: true })
 app.route({
   url: '/mypath',
   method: ['GET', 'POST', 'OPTIONS'],
-  handler: async (req, reply) => {
-    const response = await myServerAdapter.handleNodeRequestAndResponse(req, reply, {
+  handler: (req, reply) => myServerAdapter.handleNodeRequestAndResponse(req, reply, {
       req,
       reply
     })
-
-    reply.send(response)
-
-    return reply
-  }
 })
 
 app.listen(4000)
