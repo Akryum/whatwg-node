@@ -6,7 +6,7 @@
 Now the server adapter created with `@whatwg-node/server` can be used with Fastify easier;
 
 ```ts
-import fastify, { FastifyReply, FastifyRequest } from 'fastify'
+import fastify from 'fastify'
 import myServerAdapter from './myServerAdapter'
 
 // This is the fastify instance you have created

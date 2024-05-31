@@ -152,7 +152,7 @@ So you can benefit from the powerful plugins of Fastify ecosystem.
 [See the ecosystem](https://www.fastify.io/docs/latest/Guides/Ecosystem/)
 
 ```ts
-import fastify, { FastifyReply, FastifyRequest } from 'fastify'
+import fastify from 'fastify'
 import myServerAdapter from './myServerAdapter'
 
 // This is the fastify instance you have created
